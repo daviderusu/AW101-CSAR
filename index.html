@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AW101-611 CSAR Educational System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">
+        AW101 <span>CSAR</span>
+    </div>
+
+    <div class="status">
+        EDUCATIONAL SYSTEM
+        <span class="online">● ONLINE</span>
+    </div>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h3>MAIN MENU</h3>
+
+        <button class="menu-btn active" data-section="home">
+            🏠 Dashboard
+        </button>
+
+        <button class="menu-btn" data-section="aircraft">
+            🚁 Aircraft Overview
+        </button>
+
+        <button class="menu-btn" data-section="cockpit">
+            🎛 Cockpit
+        </button>
+
+        <button class="menu-btn" data-section="avionics">
+            📡 Avionic Systems
+        </button>
+
+        <button class="menu-btn" data-section="electrical">
+            ⚡ Electrical System
+        </button>
+
+        <button class="menu-btn" data-section="fuel">
+            ⛽ Fuel System
+        </button>
+
+        <button class="menu-btn" data-section="hydraulic">
+            🔧 Hydraulic System
+        </button>
+
+        <button class="menu-btn" data-section="controls">
+            🎮 Flying Controls
+        </button>
+
+        <button class="menu-btn" data-section="transmission">
+            ⚙ Transmission
+        </button>
+
+        <button class="menu-btn" data-section="training">
+            📚 Training Center
+        </button>
+
+    </aside>
+
+    <main class="content">
+
+        
+<section id="home" class="page active">
+
+    <div class="top-bar">
+
+    <div class="top-bar-brand">
+        <span class="top-bar-icon">🚁</span>
+        <div>
+            <strong>AW101 CSAR</strong>
+            <small>EDUCATIONAL PLATFORM</small>
+        </div>
+    </div>
+
+    <div class="top-bar-info">
+        <div class="system-online">
+            <span class="online-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <div class="clock-box">
+            <span id="digital-clock">00:00:00</span>
+            <small id="digital-date">Loading date...</small>
+        </div>
+    </div>
+
+</div>
+
+    <div class="section-header">
+        <div>
+            <h1>AW101 CSAR Dashboard</h1>
+            <p>Educational Aircraft Systems Platform</p>
+        </div>
+        <span class="status-badge">SYSTEM ONLINE</span>
+    </div>
+
+    <div class="dashboard-hero">
+        <div class="hero-content">
+            <span class="hero-label">AW101-611 CSAR</span>
+            <h2>Welcome to the<br>Aircraft Systems Center</h2>
+            <p>
+                Explore the aircraft systems, discover the
+                technical architecture and test your knowledge.
+            </p>
+            <button class="dashboard-button"
+                data-section="aircraft">
+                EXPLORE AIRCRAFT →
+            </button>
+        </div>
+
+        <div class="hero-visual">🚁</div>
+    </div>
+
+    <div class="dashboard-stats">
+
+        <div class="stat-card">
+            <span class="stat-icon">📚</span>
+            <div class="stat-value">10</div>
+            <div class="stat-label">LEARNING MODULES</div>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⚙️</span>
+            <div class="stat-value">3</div>
+            <div class="stat-label">HYDRAULIC SYSTEMS</div>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">⚡</span>
+            <div class="stat-value">205</div>
+            <div class="stat-label">GENERATION kVA</div>
+        </div>
+
+        <div class="stat-card">
+            <span class="stat-icon">🎓</span>
+            <div class="stat-value">3</div>
+            <div class="stat-label">QUIZ QUESTIONS</div>
+        </div>
+
+    </div>
+
+    <div class="dashboard-section-title">
+        <h2>System Modules</h2>
+        <p>Select a module to explore</p>
+    </div>
+
+    <div class="module-grid">
+
+        <button class="module-card" data-section="aircraft">
+            <span>🚁</span>
+            <strong>Aircraft Overview</strong>
+            <small>Aircraft specifications</small>
+        </button>
+
+        <button class="module-card" data-section="cockpit">
+            <span>🎛️</span>
+            <strong>Cockpit</strong>
+            <small>Flight deck overview</small>
+        </button>
+
+        <button class="module-card" data-section="avionics">
+            <span>📡</span>
+            <strong>Avionics</strong>
+            <small>Electronic systems</small>
+        </button>
+
+        <button class="module-card" data-section="electrical">
+            <span>⚡</span>
+            <strong>Electrical</strong>
+            <small>Power generation</small>
+        </button>
+
+        <button class="module-card" data-section="fuel">
+            <span>⛽</span>
+            <strong>Fuel Systems</strong>
+            <small>Fuel configuration</small>
+        </button>
+
+        <button class="module-card" data-section="hydraulic">
+            <span>⚙️</span>
+            <strong>Hydraulic</strong>
+            <small>Three independent systems</small>
+        </button>
+
+        <button class="module-card" data-section="controls">
+            <span>🎮</span>
+            <strong>Flight Controls</strong>
+            <small>Control architecture</small>
+        </button>
+
+        <button class="module-card" data-section="transmission">
+            <span>🔩</span>
+            <strong>Transmission</strong>
+            <small>Transmission overview</small>
+        </button>
+
+        <button class="module-card" data-section="training">
+            <span>🎓</span>
+            <strong>Training Center</strong>
+            <small>Knowledge test</small>
+        </button>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>PLATFORM INFORMATION</strong>
+        <p>
+            AW101 CSAR Educational Platform.
+            For general learning and reference only.
+            Not an aircraft operating or maintenance manual.
+        </p>
+    </div>
+
+</section>
+
+
+        
+<section id="aircraft" class="page">
+
+    <div class="section-header">
+        <div>
+            <span class="small-label">AIRCRAFT INFORMATION</span>
+            <h1>AW101-611 CSAR</h1>
+            <p>Aircraft Overview & Technical Data</p>
+        </div>
+
+        <span class="aircraft-status">● REFERENCE DATA</span>
+    </div>
+
+    <div class="aircraft-banner">
+        <div>
+            <span>SEARCH AND RESCUE</span>
+            <h2>AW101-611</h2>
+            <p>Combat Search and Rescue Helicopter</p>
+        </div>
+    </div>
+
+    <h2 class="subheading">GENERAL CONFIGURATION</h2>
+
+    <div class="aircraft-grid">
+
+        <div class="info-card">
+            <span class="info-icon">⚙</span>
+            <h3>Engine Installation</h3>
+            <strong>3 Engines</strong>
+            <p>General Electric CT7-8E</p>
+        </div>
+
+        <div class="info-card">
+            <span class="info-icon">🚁</span>
+            <h3>Main Rotor</h3>
+            <strong>5 Blades</strong>
+            <p>BERP III composite main rotor blades</p>
+        </div>
+
+        <div class="info-card">
+            <span class="info-icon">◉</span>
+            <h3>Tail Rotor</h3>
+            <strong>4 Blades</strong>
+            <p>Composite tail rotor blades</p>
+        </div>
+
+        <div class="info-card">
+            <span class="info-icon">📡</span>
+            <h3>Mission Systems</h3>
+            <strong>CSAR</strong>
+            <p>Search, rescue and mission equipment</p>
+        </div>
+
+    </div>
+
+    <h2 class="subheading">AIRCRAFT SYSTEMS</h2>
+
+    <div class="system-list">
+
+        <div class="system-item">
+            <span>01</span>
+            <div>
+                <h3>Avionics Systems</h3>
+                <p>Aircraft electronic architecture and equipment.</p>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <span>02</span>
+            <div>
+                <h3>Electrical Generation</h3>
+                <p>Electrical generation and distribution overview.</p>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <span>03</span>
+            <div>
+                <h3>Fuel System</h3>
+                <p>Fuel tanks and fuel system components.</p>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <span>04</span>
+            <div>
+                <h3>Hydraulic Systems</h3>
+                <p>Three independent hydraulic systems.</p>
+            </div>
+        </div>
+
+        <div class="system-item">
+            <span>05</span>
+            <div>
+                <h3>Transmission</h3>
+                <p>Main and accessory gearbox systems.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="technical-note">
+        EDUCATIONAL REFERENCE ONLY — NOT FOR AIRCRAFT
+        OPERATION OR MAINTENANCE.
+    </p>
+
+</section>
+
+
+        <section id="cockpit" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Cockpit – Instrument Panel</h1>
+            <p>AW101-611 CSAR · Educational Overview</p>
+        </div>
+        <span class="status-badge">REFERENCE</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Flight Deck Overview</h2>
+            <p>
+                This section presents an educational overview
+                of the AW101 cockpit elements identified in the
+                reference document.
+            </p>
+        </div>
+        <div class="cockpit-icon">🚁</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">▦</div>
+            <h2>Instrument Panel</h2>
+            <p>
+                The instrument panel is the cockpit area
+                containing the aircraft's flight and system
+                information displays.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">↕</div>
+            <h2>Collective Lever</h2>
+            <p>
+                A flight-deck control identified in the
+                AW101 cockpit reference material.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">✥</div>
+            <h2>Cyclic Stick</h2>
+            <p>
+                Another flight-deck control identified
+                in the cockpit reference material.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>EDUCATIONAL NOTE</strong>
+        <p>
+            This page is for general educational study only.
+            It is not a flight training or operating manual.
+        </p>
+    </div>
+
+</section>
+
+        <section id="avionics" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Avionics Systems</h1>
+            <p>AW101-611 CSAR · Electronic Systems Overview</p>
+        </div>
+        <span class="status-badge">SYSTEMS</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Aircraft Avionics</h2>
+            <p>
+                Explore the electronic architecture and
+                equipment areas identified in the AW101
+                reference document.
+            </p>
+        </div>
+        <div class="cockpit-icon">📡</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Navigation Systems</h2>
+            <p>
+                Electronic equipment associated with
+                aircraft navigation and position information.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">▤</div>
+            <h2>Avionics Cabinets</h2>
+            <p>
+                The reference document includes an overview
+                of the aircraft avionics cabinet architecture.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">⌁</div>
+            <h2>Mission Equipment</h2>
+            <p>
+                Electronic equipment associated with
+                the aircraft's CSAR mission configuration.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>REFERENCE INFORMATION</strong>
+        <p>
+            This page presents general educational descriptions.
+            It does not contain operating or maintenance procedures.
+        </p>
+    </div>
+
+</section>
+
+        <section id="electrical" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Electrical Systems</h1>
+            <p>AW101-611 CSAR · Electrical Generation Overview</p>
+        </div>
+        <span class="status-badge">ELECTRICAL</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Electrical Power Generation</h2>
+            <p>
+                The AW101 electrical generation system includes
+                main generators and an auxiliary power unit generator.
+            </p>
+        </div>
+        <div class="cockpit-icon">⚡</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">⚡</div>
+            <h2>Main Generator 1</h2>
+            <p>
+                Reference capacity: 90 kVA.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">⚡</div>
+            <h2>Main Generator 2</h2>
+            <p>
+                Reference capacity: 90 kVA.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">🔋</div>
+            <h2>APU Generator</h2>
+            <p>
+                Reference capacity: 25 kVA.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>SYSTEM REFERENCE</strong>
+        <p>
+            The source document identifies two main generators
+            rated at 90 kVA each and one APU generator rated
+            at 25 kVA. This is educational information only.
+        </p>
+    </div>
+
+</section>
+
+        <section id="fuel" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Fuel Systems</h1>
+            <p>AW101-611 CSAR · Fuel System Overview</p>
+        </div>
+        <span class="status-badge">FUEL</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Fuel Storage System</h2>
+            <p>
+                The reference document identifies three main fuel
+                tanks and two transfer tanks.
+            </p>
+        </div>
+        <div class="cockpit-icon">⛽</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">▰</div>
+            <h2>Main Fuel Tanks</h2>
+            <p>
+                The aircraft reference identifies three
+                main fuel tanks.
+            </p>
+            <div class="fuel-count">3 TANKS</div>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">▰</div>
+            <h2>Transfer Tanks</h2>
+            <p>
+                The aircraft reference identifies two
+                transfer tanks.
+            </p>
+            <div class="fuel-count">2 TANKS</div>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Fuel System Diagram</h2>
+            <p>
+                The original reference document includes
+                a fuel system schematic.
+            </p>
+            <div class="fuel-count">REFERENCE</div>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>EDUCATIONAL REFERENCE</strong>
+        <p>
+            This page presents the tank configuration identified
+            in the source document. It is not a fuel-system
+            operating or maintenance guide.
+        </p>
+    </div>
+
+</section>
+
+        <section id="hydraulic" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Hydraulic Systems</h1>
+            <p>AW101-611 CSAR · Hydraulic System Overview</p>
+        </div>
+        <span class="status-badge">HYDRAULIC</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Three Independent Systems</h2>
+            <p>
+                The AW101 reference document identifies
+                three independent hydraulic systems.
+            </p>
+        </div>
+        <div class="cockpit-icon">⚙️</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Hydraulic System 1</h2>
+            <p>
+                First of the three independent hydraulic
+                systems identified in the reference.
+            </p>
+            <div class="fuel-count">SYSTEM 01</div>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Hydraulic System 2</h2>
+            <p>
+                Second independent hydraulic system
+                identified in the reference.
+            </p>
+            <div class="fuel-count">SYSTEM 02</div>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Hydraulic System 3</h2>
+            <p>
+                Third independent hydraulic system
+                identified in the reference.
+            </p>
+            <div class="fuel-count">SYSTEM 03</div>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>EDUCATIONAL REFERENCE</strong>
+        <p>
+            The source identifies three independent hydraulic
+            systems. Detailed operating and maintenance
+            procedures are outside the scope of this application.
+        </p>
+    </div>
+
+</section>
+
+
+        <section id="controls" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Flight Controls</h1>
+            <p>AW101-611 CSAR · Flying Controls Overview</p>
+        </div>
+        <span class="status-badge">CONTROLS</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Flight Control Architecture</h2>
+            <p>
+                Explore the main flight-control elements
+                identified in the AW101 reference material.
+            </p>
+        </div>
+        <div class="cockpit-icon">🎮</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">✥</div>
+            <h2>Flying Controls</h2>
+            <p>
+                The reference document includes an overview
+                of the aircraft flying control system.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">⚙</div>
+            <h2>AFCS</h2>
+            <p>
+                Automatic Flight Control System,
+                identified in the aircraft systems overview.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">▤</div>
+            <h2>Control Interface</h2>
+            <p>
+                The reference includes an illustration
+                of the flying controls and AFCS interface.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>EDUCATIONAL REFERENCE</strong>
+        <p>
+            This module describes system categories only.
+            It is not a pilot training or flight-control manual.
+        </p>
+    </div>
+
+</section>
+
+        <section id="transmission" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Transmission Systems</h1>
+            <p>AW101-611 CSAR · Transmission Overview</p>
+        </div>
+        <span class="status-badge">TRANSMISSION</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Transmission Architecture</h2>
+            <p>
+                Explore the transmission system topics
+                identified in the AW101 reference document.
+            </p>
+        </div>
+        <div class="cockpit-icon">⚙️</div>
+    </div>
+
+    <div class="cockpit-grid">
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">01</div>
+            <div class="cockpit-symbol">⚙</div>
+            <h2>Main Transmission</h2>
+            <p>
+                The transmission system is identified
+                in the aircraft systems overview.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">02</div>
+            <div class="cockpit-symbol">◉</div>
+            <h2>Lubrication System</h2>
+            <p>
+                The reference document includes a
+                transmission lubrication schematic.
+            </p>
+        </article>
+
+        <article class="cockpit-card">
+            <div class="cockpit-number">03</div>
+            <div class="cockpit-symbol">▤</div>
+            <h2>Technical Reference</h2>
+            <p>
+                An educational section for viewing
+                transmission-related reference topics.
+            </p>
+        </article>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>EDUCATIONAL REFERENCE</strong>
+        <p>
+            This page presents general system information.
+            It is not a transmission operating or maintenance manual.
+        </p>
+    </div>
+
+</section>
+
+       <section id="training" class="page">
+
+    <div class="section-header">
+        <div>
+            <h1>Training Center</h1>
+            <p>AW101-611 CSAR · Educational Knowledge Test</p>
+        </div>
+        <span class="status-badge">LEARNING</span>
+    </div>
+
+    <div class="cockpit-intro">
+        <div>
+            <h2>Test Your Knowledge</h2>
+            <p>
+                Check what you have learned about the AW101-611
+                systems using questions based on the reference document.
+            </p>
+        </div>
+        <div class="cockpit-icon">🎓</div>
+    </div>
+
+    <div class="training-panel">
+
+        <div class="training-top">
+            <div>
+                <span class="training-label">KNOWLEDGE CHECK</span>
+                <h2>AW101 Systems Quiz</h2>
+            </div>
+            <div class="training-score">
+    <span id="quiz-score">0</span>
+    <small>POINTS</small>
+    <p id="best-score">BEST: 0 / 3</p>
+</div>
+        </div>
+
+        <div class="quiz-progress">
+            <div id="quiz-progress-bar"></div>
+        </div>
+
+        <div id="quiz-question-area">
+
+            <span id="question-number">QUESTION 1 / 3</span>
+
+            <h3 id="quiz-question">
+                How many independent hydraulic systems
+                are identified in the reference?
+            </h3>
+
+            <div id="quiz-options">
+
+                <button class="quiz-option" data-answer="wrong">
+                    2 systems
+                </button>
+
+                <button class="quiz-option" data-answer="correct">
+                    3 systems
+                </button>
+
+                <button class="quiz-option" data-answer="wrong">
+                    4 systems
+                </button>
+
+            </div>
+
+            <p id="quiz-feedback"></p>
+
+            <button id="next-question" class="quiz-next" disabled>
+                NEXT QUESTION →
+            </button>
+
+        </div>
+
+        <div id="quiz-result" class="quiz-result" hidden>
+            <div class="result-icon">🏆</div>
+            <h2>Training Completed!</h2>
+            <p id="final-score"></p>
+            <button id="restart-quiz" class="quiz-next">
+                TRY AGAIN
+            </button>
+        </div>
+
+    </div>
+
+    <div class="educational-note">
+        <strong>TRAINING INFORMATION</strong>
+        <p>
+            This quiz tests general information from the
+            educational reference document. It is not flight
+            training or technical qualification.
+        </p>
+    </div>
+
+</section>
+
+    </main>
+
+</div>
+
+<footer>
+    AW101-611 CSAR | EDUCATIONAL PROJECT
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
